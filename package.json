@@ -1,0 +1,26 @@
+{
+  "name": "react-native-connection-service",
+  "version": "1.0.0",
+  "description": "A react native library to use the android connection service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name":"Nicolas Tremblay",
+    "email":"ns.tremblay@gmail.com"
+  },
+  "license": "MIT",
+  "nativePackage":true,
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  },
+  "dependencies": {
+    "react-native": "^0.57.3",
+    "react-native-windows": "^0.57.0-rc.0"
+  }
+}

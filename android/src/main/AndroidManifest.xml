@@ -1,0 +1,10 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.genm">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>
+  
