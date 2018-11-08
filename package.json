@@ -1,26 +1,50 @@
 {
-  "name": "react-native-connection-service",
-  "version": "1.0.0",
-  "description": "A react native library to use the android connection service",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "git+https://github.com/NsTremblay/react-native-connection-service.git",
+      "/Users/nicolastremblay/Documents/GitHub/genmReact"
+    ]
+  ],
+  "_from": "git+https://github.com/NsTremblay/react-native-connection-service.git",
+  "_id": "react-native-connection-service@git+https://github.com/NsTremblay/react-native-connection-service.git#201191a6c25ea5382f9371e14f4831e9b99faf77",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-connection-service",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/NsTremblay/react-native-connection-service.git",
+    "rawSpec": "git+https://github.com/NsTremblay/react-native-connection-service.git",
+    "saveSpec": "git+https://github.com/NsTremblay/react-native-connection-service.git",
+    "fetchSpec": "https://github.com/NsTremblay/react-native-connection-service.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/NsTremblay/react-native-connection-service.git#201191a6c25ea5382f9371e14f4831e9b99faf77",
+  "_spec": "git+https://github.com/NsTremblay/react-native-connection-service.git",
+  "_where": "/Users/nicolastremblay/Documents/GitHub/genmReact",
+  "author": {
+    "name": "Nicolas Tremblay",
+    "email": "ns.tremblay@gmail.com"
+  },
+  "devDependencies": {
+    "react-native": ">=0.19.0"
+  },
+  "description": "A react native library to use the android connection service",
   "keywords": [
     "react-native"
   ],
-  "author": {
-    "name":"Nicolas Tremblay",
-    "email":"ns.tremblay@gmail.com"
-  },
   "license": "MIT",
-  "nativePackage":true,
+  "main": "index.js",
+  "name": "react-native-connection-service",
+  "nativePackage": true,
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+    "react-native": ">=0.19.0"
   },
-  "dependencies": {
-    "react-native": "^0.57.3",
-    "react-native-windows": "^0.57.0-rc.0"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
