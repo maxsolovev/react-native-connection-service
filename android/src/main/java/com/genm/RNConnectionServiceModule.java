@@ -17,6 +17,7 @@ import android.graphics.PixelFormat;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.support.v4.app.ActivityCompat;
@@ -58,7 +59,16 @@ public class RNConnectionServiceModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
+  public static Boolean isConnectionServiceAvailable() {
+    // PhoneAccount is available since api level 23
+    return Build.VERSION.SDK_INT >= 23;
+  }
+
+  @ReactMethod
   public void showCallUI(){
+    if (!isConnectionServiceAvailable()) {
+      return;
+    }
 
     PowerManager pm = (PowerManager) this.reactContext.getSystemService(Context.POWER_SERVICE);
     this.wl = pm.newWakeLock( PowerManager.FULL_WAKE_LOCK
@@ -97,6 +107,9 @@ public class RNConnectionServiceModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void stopRingtone(){
+    if (!isConnectionServiceAvailable()) {
+      return;
+    }
 
     if(this.ringtone != null){
       this.ringtone.stop();

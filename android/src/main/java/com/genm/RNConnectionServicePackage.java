@@ -1,24 +1,19 @@
 
 package com.genm;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
-import com.facebook.react.bridge.JavaScriptModule;
+import java.util.*;
+
 public class RNConnectionServicePackage implements ReactPackage {
+
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNConnectionServiceModule(reactContext));
-    }
-
-    // Deprecated from RN 0.47
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-      return Collections.emptyList();
+      List<NativeModule> modules = new ArrayList<>();
+      modules.add(new RNConnectionServiceModule(reactContext));
+      return modules;
     }
 
     @Override

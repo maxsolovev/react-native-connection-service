@@ -7,7 +7,7 @@ import android.util.Log;
 
 import static android.content.ContentValues.TAG;
 
-@TargetApi(Build.VERSION_CODES.O_MR1)
+@TargetApi(Build.VERSION_CODES.M)
 public class CallConnection extends Connection{
 
     public CallConnection(){
